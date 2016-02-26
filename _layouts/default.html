@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+{% include head.html %}
+<body>
+
+
+
+<!-- Start Loading -->
+
+<!--<section class="loading-overlay">
+    <div class="Loading-Page">
+		<h2 class="loader">Loading...</h2>
+    </div>
+</section>-->
+
+ <!-- End Loading  -->
+
+
+{% include header.html %}
+
+
+<!-- End Section Header style3 -->
+
+<!-- Start Pages Title Style1 -->
+
+<section id="Page-title" class="Page-title-Style1">
+	<div class="container inner-Pages">
+    	<div class="row">
+            <div class="Page-title">
+				<div class="col-md-6 Title-Pages">
+                	<h2>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</h2>
+                </div>
+                <div class="col-md-6 Catogry-Pages">
+					<p>You are here :  <a href="#">Home</a>   /   Blog</p>
+                </div>
+            </div>
+ 		</div>
+    </div>
+</section>
+
+<!-- End Pages Title Style1 -->
+
+<!-- Start Blog -->
+
+<section id="Latest-News" class="light-wrapper">
+<div class="container inner">
+	<div class="row">
+        
+        {{ content }}
+
+		<div class="col-md-4">
+            {% include sidebar.html %}
+		</div>
+	</div>
+</div>
+</section>
+
+<!-- End Blog -->
+
+<!-- Start Footer -->
+
+{% include footer.html %}
+
+<!-- End Footer -->
+
+</div>
+
+<!-- Back to top Link -->
+<div id="to-top" class="main-bg"><span class="fa fa-chevron-up"></span></div>
+
+
+{% include javascript.html %}
+</body>
+
+</html>
