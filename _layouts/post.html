@@ -18,7 +18,7 @@ layout: default
                 {% if cat_size != 0 %}
                     {% for category in page.categories %}
                         {% assign cat_slug = category | slugify  %}
-                        <a href="categories/{{cat_slug | prepend: site.baseurl}}">{{ category | capitalize }}</a>
+                        <a href="{{ site.baseurl}}/categories/{{ cat_slug }}">{{ category | capitalize }}</a>
                     {% endfor %}
                 {% endif %}</p></li>
             <!--<li><i class="fa fa-comment"></i><p>Comments : <a href="#">31</a></p></li>
@@ -48,7 +48,7 @@ layout: default
             {% if tag_size != 0 %}
                 {% for tag in page.tags %}
                     {% assign tag_slug = tag | slugify %} 
-                    <a href="tags/{{tag_slug | prepend: site.baseurl}}">{{ tag | capitalize }}</a>
+                    <a href="{{ site.baseurl}}/tags/{{ tag_slug }}">{{ tag | capitalize }}</a>
                 {% endfor %} 
             {% endif %}
             
