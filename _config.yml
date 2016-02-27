@@ -1,7 +1,7 @@
 excerpt_separator: "<!--more-->"
 highlighter: pygments
 markdown: kramdown
-url: http://gentrop.github.io/gentrop.blog
+url: http://gentrop.github.io/blog
 title: Gentrop Blog
 email: luciano.faria@gentrop.com
 author: Luciano Faria
