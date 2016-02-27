@@ -5,7 +5,7 @@ url: http://gentrop.github.io/blog
 title: Gentrop Blog
 email: luciano.faria@gentrop.com
 author: Luciano Faria
-description: My awesome new site
+description: Gentrop Blog
 gems : [jekyll-paginate]
 baseurl: /blog
 paginate: 4
