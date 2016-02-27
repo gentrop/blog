@@ -3,7 +3,7 @@ published: true
 title: Bem-vindos à Gentrop!
 author: luciano_faria
 layout: post
-hero: images/posts/2016-02-24-bem-vindos-gentrop/hero.png
+hero: /images/posts/2016-02-24-bem-vindos-gentrop/hero.png
 tags: gentrop
 categories: gentrop marketing
 ---
