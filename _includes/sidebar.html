@@ -13,7 +13,7 @@
                         {% assign counter = counter | plus: 1 %}
                     {% endfor %}  
                     {% assign cat_slug = category[0] | slugify  %}
-                <li><a href="/categories/{{cat_slug | prepend: site.baseurl}}"><p>{{ category[0] | capitalize }}</p></a><span>({{counter}})</span><i class="fa fa-angle-double-right"></i></li>
+                <li><a href="categories/{{cat_slug | prepend: site.baseurl}}"><p>{{ category[0] | capitalize }}</p></a><span>({{counter}})</span><i class="fa fa-angle-double-right"></i></li>
                 {% endfor %}
             </ul>
         </div>
@@ -33,7 +33,7 @@
                         {% assign counter = counter | plus: 1 %}
                     {% endfor %}   
                     {% assign tag_slug = tag[0] | slugify %} 
-                        <li><a href="/tags/{{tag_slug | prepend: site.baseurl}}">{{ tag[0] }} ({{ counter }})</a></li>
+                        <li><a href="tags/{{tag_slug | prepend: site.baseurl}}">{{ tag[0] }} ({{ counter }})</a></li>
                 {% endfor %}
             </ul>
         </div>
