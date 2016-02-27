@@ -1,11 +1,12 @@
 excerpt_separator: "<!--more-->"
 highlighter: pygments
 markdown: kramdown
-url: http://gentrop.github.io/blog
+url: http://gentrop.github.io
 title: Gentrop Blog
 email: luciano.faria@gentrop.com
 author: Luciano Faria
 description: My awesome new site
 gems : [jekyll-paginate]
+baseurl: /blog
 paginate: 4
 google_analytics: 
