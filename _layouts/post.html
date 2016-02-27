@@ -18,7 +18,7 @@ layout: default
                 {% if cat_size != 0 %}
                     {% for category in page.categories %}
                         {% assign cat_slug = category | slugify  %}
-                        <a href="/categories/{{cat_slug | prepend: site.baseurl}}">{{ category | capitalize }}</a>
+                        <a href="categories/{{cat_slug | prepend: site.baseurl}}">{{ category | capitalize }}</a>
                     {% endfor %}
                 {% endif %}</p></li>
             <!--<li><i class="fa fa-comment"></i><p>Comments : <a href="#">31</a></p></li>
@@ -30,9 +30,9 @@ layout: default
     <div class="Post-Images">
         {% if page.hero %}
 				{% if page.hero_high %}
-					<a href="/{{page.hero_high}}"><img src="/{{page.hero | prepend: site.baseurl}}" alt="{{page.hero_alt}}"></a>
+					<a href="{{page.hero_high}}"><img src="{{page.hero | prepend: site.baseurl}}" alt="{{page.hero_alt}}"></a>
 				{% else %}
-					<img src="/{{page.hero | prepend: site.baseurl}}" alt="{{page.hero_alt}}">
+					<img src="{{page.hero | prepend: site.baseurl}}" alt="{{page.hero_alt}}">
 				{% endif %}
 		{% endif %}
     </div>
@@ -48,7 +48,7 @@ layout: default
             {% if tag_size != 0 %}
                 {% for tag in page.tags %}
                     {% assign tag_slug = tag | slugify %} 
-                    <a href="/tags/{{tag_slug | prepend: site.baseurl}}">{{ tag | capitalize }}</a>
+                    <a href="tags/{{tag_slug | prepend: site.baseurl}}">{{ tag | capitalize }}</a>
                 {% endfor %} 
             {% endif %}
             
