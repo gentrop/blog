@@ -7,6 +7,5 @@ email: luciano.faria@gentrop.com
 author: Luciano Faria
 description: Gentrop Blog
 gems : [jekyll-paginate]
-baseurl: /blog
 paginate: 4
 google_analytics: 
